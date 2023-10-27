@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+}
+
+main {
+    width: 1024px;
+    min-height: 100vh;
+    border: 2px gray solid;
+    margin: 0px auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.parent {
+    position: relative;
+    background-color: red;
+    width:  300px;
+    height: 300px;
+    background-image: url(https://avatars.githubusercontent.com/u/139130280?v=4);
+    background-size: cover;
+    background-position: center;
+    border-radius: 191px;
+}
+
+.child {
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    background-color: red;
+    width: 65px;
+    height: 65px;
+    border-radius: 100px;
+}
+
+.notification-text {
+    padding-top: 10%;
+    font-size: 45;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.row {
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    gap: 0px 20px;
+    align-items: center;
+}
+
+.gallery {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4. 1fr);
+    width: 900px;
+    height: 1000px;
+}
+
+.gallery .image {
+    /* width: 200px;
+    height: 200px; */
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+}
+
+#extendr {
+    grid-column: span 2;
+    grid-row: span 1;
+    background-color: red;
+    width: 100%;
+}
+
+#extendc {
+    grid-column: span 1;
+    grid-row: span 2;
+    background-color: red;
+    width: 100%;
+}
+
+#profile-link {
+    font-size: 35px;
+    color: black;
+    text-decoration: none;
+}
+
+#profile-link:hover {
+    color: blue;
+}
+
+.gallery .image:nth-child(1){
+    background-image: url(https://cdna.artstation.com/p/assets/images/images/029/996/332/large/emilio-r-camarena-emkun-paisaje3.jpg?1599263064);
+}
+
+.gallery .image:nth-child(2){
+    background-image: url(https://img.wattpad.com/cover/89571494-256-k960879.jpg);
+}
+
+.gallery .image:nth-child(3){
+    background-image: url(https://i.quotev.com/xpcb2vdsaaaa.jpg);
+}
+
+.gallery .image:nth-child(4){
+    background-image: url(https://pbs.twimg.com/profile_images/1148351955284234240/XXDImBNg_400x400.jpg);
+}
+
+.gallery .image:nth-child(5){
+    background-image: url(https://thumbs.dreamstime.com/b/landscape-photo-rice-terraces-china-vertical-longsheng-50456909.jpg)
+}
+
+.gallery .image:nth-child(6){
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf_Ovq_KbTsEMtLBXfrQxnP4S2DK6J2uuYEw&usqp=CAU);
+}
+
+.gallery .image:nth-child(7){
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4tRafhG-2czKbuDBcAzfwiLkpjW6NrRmHuMDL-2zzAAhAv7gyKmWtEAJF2-nqkLqeDTQ&usqp=CAU);
+}
+
+.gallery .image:nth-child(8){
+    background-image: url(https://img2.oastatic.com/img2/44985223/320x320c/a-random-view-of-west-lake.jpg);
+}
+
+.gallery .image:nth-child(9){
+    background-image: url(https://i.pinimg.com/564x/ce/a4/df/cea4df6e2a9c2649fa1c00afb6a93cb7.jpg);
+}
+
+.gallery .image:nth-child(10){
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-gOhV4OwXR-hkyNK4dNczVJf4ImnaFHNamg&usqp=CAU);
+}

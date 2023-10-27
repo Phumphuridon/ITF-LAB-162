@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function setName(){
+                const nameField = document.getElementById("username")
+                const name = nameField.value
+                const title = document.getElementById("profile-link")
+                title.innerText = name + "'s Profile"
+            }
+            function setImage(){
+                const profileIMG = document.getElementById("profilePicture")
+                const profileURL = document.getElementById("imagelink")
+                profileIMG.style.backgroundImage = `url(${profileURL.value})`
+            }
+        </script>
+    </head>
+    <body>
+        <main>
+            <div class="parent" id="profilePicture">
+                <div class="child">
+                    <div class="notification-text">1</div>
+                </div>
+            </div>
+        
+            <a href="https://www.github.com" id="profile-link" target="_blank">Phum's Profile</a>
+            <div class="row">
+                <p1>set username</p1>
+                <input id="username" type="text">
+                <button onclick="setName()">Set</button>
+            </div>
+            <div class="row">
+                <p1>set profile image</p1>
+                <input id="imagelink" type="text">
+                <button onclick="setImage()">Set</button>
+            </div>
+            <div class="gallery">
+                <div id="extendr" class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+                <div id="extendc" class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+            </div>
+        </main>
+    </body>
+</html>
